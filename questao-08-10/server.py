@@ -11,14 +11,14 @@ class MyService(rpyc.Service):
         # código que é executado quando uma conexão é finalizada, caso seja necessário
         pass
 
-    def exposed_calcula_vetor(self, arr: list) -> int:
+    def exposed_sum_array(self, arr: list) -> int:
         start = time.time()
         x = 0
         for i in arr:
             x += i
        
         end = time.time()
-        print(f"n = {len(arr)}: {end - start}")
+        print(f"n = {len(arr)}: {(end - start):.3f}s")
 
         return x
 

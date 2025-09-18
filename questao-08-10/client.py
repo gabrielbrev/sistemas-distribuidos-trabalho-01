@@ -15,7 +15,7 @@ for arr_size in [100, 1000, 10000]:
 
     start = time.time()
 
-    conn.root.calcula_vetor(arr)
+    conn.root.sum_array(arr)
 
     end = time.time()
-    print(f"n = {arr_size}: {(end - start):.2f}s")
+    print(f"n = {arr_size}: {(end - start):.3f}s")
